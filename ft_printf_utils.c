@@ -6,7 +6,7 @@
 /*   By: cbuszyns <cbuszyns@student.42roma.it>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/15 15:24:17 by cbuszyns          #+#    #+#             */
-/*   Updated: 2022/02/16 12:00:06 by cbuszyns         ###   ########.fr       */
+/*   Updated: 2022/02/16 12:27:36 by cbuszyns         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,24 +14,24 @@
 
 int	ft_putchar(int c)
 {
-    return(write(1, &c, 1));
+	return (write(1, &c, 1));
 }
 
 int	ft_putstr(char *str)
 {
-    int	i;
+	int	i;
 
-    i = 0;
-    if (!str)
-    {
-        return (write(1, "(null)", 6));
-    }
-    while (str[i])
-    {
-        ft_putchar(str[i]);
-        i++;
-    }
-    return (i);
+	i = 0;
+	if (!str)
+	{
+		return (write(1, "(null)", 6));
+	}
+	while (str[i])
+	{
+		ft_putchar(str[i]);
+		i++;
+	}
+	return (i);
 }
 
 int	ft_put_unsigned(unsigned int n)
@@ -47,7 +47,7 @@ int	ft_put_unsigned(unsigned int n)
 
 int	ft_putnbr(int n)
 {
-	int count;
+	int	count;
 
 	count = 0;
 	if (n == -2147483648)
